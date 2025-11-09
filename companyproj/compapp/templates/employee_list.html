@@ -13,6 +13,7 @@
     <ul>
         {% for employee in employees %}
             <li>
+                <a href="{% url 'employee_detail' employee.id %}">
                 <strong>{{ employee.name }}</strong><br>
                 Position: {{ employee.position }}<br>
                 Joined: {{ employee.date_joined }}<br>
